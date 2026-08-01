@@ -1,0 +1,80 @@
+
+ML = finding patterns in numbers
+
+Way of working: Numbers → Vectors  →  Matrices
+
+Scalar = simple one number. Ex. 1, 2, 7, 8
+Vector = ordered collection of numbers. Ex. [3,4], [5,2,7], [2,7,9,12,15]
+(Single number inside it is called component)
+
+Visualization: normal cartesian method, diff for 1D, 2D, 3D, 4D,....
+
+
+
+USE OF VECTORS IN ML:
+Ex. Iris flower 
+
+Features :
+Sepal Length
+Sepal Width
+Petal Length
+Petal Width
+
+Flower measurement: 
+5.1
+3.5
+1.4
+0.2
+
+Flower measurement in vectorial form: [5.1, 3.5, 1.4, 0.2]  ← Feature Vector
+
+
+
+Everything becomes vector:
+Images → Millions of numbers
+Text → Word vectors
+Audio → Signal vectors
+Video → Huge vectors
+Everything becomes numbers
+
+
+Ex. movie recommandation. Similar movies will have similar vectors (close vectors). Then a closer vector movie will be recommended. 
+
+
+
+LENGTH(MAGNITUDE OF VECTOR):
+Under root of the sum of the square of components of the vector
+
+Ex. triangle with sides [3, 4, 5] → Magnitude: √ (3²  + 4²  + 5²) 
+For [a₁,a₂,...,aₙ] → Mgnituude: √(a₁²+a₂²+...+aₙ²)
+
+Written as: ||A||
+
+Called: the norm of the vector 
+
+
+
+Vector1: [a1, a2, a3]
+Vector2: [b1, b2, b3]
+Distance between vector 1 and 2: √ ((a1 - b1)² + (a2 - b2)²  + (a3 - b3)² )
+How far these vectors are
+
+Use of distance between two vectors: ex. For recommendation systems, less distance more similar
+
+
+
+
+SCALAR OPERATATIONS: 
+Adding 5 into [2, 3] → [7, 8]
+Same for +, -, /, *
+
+Dot product: Vector A · Vector B = [x1*x2 + y1*y2] ← Scalar ans
+
+To measure angle between vectors (Direction measurement) : cosθ=∣A∣∣B∣ / A⋅B​ 
+
+
+
+
+
+
+Hyperplanes = dimension plane with higher numbers, ex. 1000D, 1500D
