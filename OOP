@@ -1,0 +1,129 @@
+OOP
+Used to manage large data (for humans)
+Making temp new variables as needed 
+Class → object (called instance of class) → data stored inside object 
+Ex. Humans (Class), Daksh (Object)
+Inbuilt classes: int, str, list etc
+Attributes = static thing at a point of time / state ; methods = operations / behaviour 
+
+
+ALWAYS ‘INSTANCE’ = OBJECT
+FIRST PYTHON LOOK AT OBJECT AND THEN CLASS DURING CODE RUN.
+
+Class creation
+class Students:
+                    pass
+
+Object creation 
+student1 = Students()
+student2 = Student()
+
+Constructor (__init__)
+class Students:
+                                def __init__(self, name, age):
+                                       self.name = name
+                                       self.age = age
+
+
+Object creation with value ls
+daksh = Student(“Daksh", 20)
+
+Accessing attributes 
+print(daksh.name)
+print(daksh.age)
+
+Modification of attributes 
+daksh.age = 21
+
+Method creation 
+class Student:
+         def introduce(self):
+         print(" Hello”)
+
+Calling a method
+daksh.introduce()
+
+Method with parameters 
+class Student:
+                                def greet(self, person):
+                                      print(“Hello", person)
+
+               Code to call:
+	   daksh.greet("Rahul”)
+               
+               
+
+Returning a value 
+class Student:
+                             def get_age(self):
+                       return self.age
+
+Code to call: 
+            age = daksh.get_age()
+
+
+Instance attributes (giving data to each object)
+class Student:
+                  def __init__(self, name):
+                     self.name = name
+
+Class attributes (data that belongs to a class, it is stored in class. All the object have this attribute by default)
+class Student:
+    school = "GEC Gandhinagar"
+
+
+                       Code to call:
+print(Student.school)
+print(daksh.school)
+
+
+Changing class attribute for a single specific 
+Student.school = "IIT Bombay"
+This one is stored in its object (That’s why first Object is called and then Class during code execution)
+
+Creating an object specific attribute 
+daksh.school = "NIT Surat"
+School attribute only belong to Daksh. No other objects has this attribute
+
+Complete example
+class Student:
+
+    school = "GEC Gandhinagar"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print("Hi, I am", self.name)
+
+    def birthday(self):
+        self.age += 1
+
+    def get_age(self):
+        return self.age
+
+
+daksh = Student("Daksh", 20)
+
+print(daksh.name)
+print(daksh.age)
+
+daksh.introduce()
+
+daksh.birthday()
+
+print(daksh.get_age())
+
+print(Student.school)
+print(daksh.school)
+
+
+
+
+
+
+
+
+
+
