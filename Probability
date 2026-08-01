@@ -1,0 +1,122 @@
+Random experiment = multiple possible outcomes, cannot predict exact outcome.
+Ex. coin toss, dice roll
+
+Trial = execution of random experiment
+Ex. Trial 1 → outcome: head; Trial 2 → outcome: tail; tossed 100 times → 100 trials
+
+Outcome = result of a trial
+Ex. toss → outcome = head
+
+Sample space = all possible outcomes
+Ex. Coin → sample space = {H, T};   Dice → sample space = {1, 2, 3, 4, 5, 6}
+
+Event = collection of outcome that satisfy our condition
+Ex. Even numbers of dice = {2, 4, 6} ← compound event;   
+      numbers greater than 3 = {4, 5, 6) ← compound event; 
+      getting 5 = {5} ← simple event
+Subset of sample space  ( E⊆S )
+
+
+Types of events:
+Simple events = only one outcome
+Compound event = more than 1 outcomes
+Independent events = two events are not dependent on each other; ex. Dice and coin are rolled together, events of dice and coin are not dependent of each other
+Dependent events = opposite of independent events
+Mutually exclusive events = events that cannot happen at the same time; ex. Event 1 = dice outcome is odd, Event 2 = dice outcome is even
+	Both event cannot come true at a same time
+Certain events = where probability = 1; ex. Result after rolling dice is greater than 0
+Impossible event = where probability = 0; ex. Result of rolling of dice is 0
+
+
+— — 
+
+Probability = Likeliness of something to happen
+
+
+Types of Probabilities:
+Theoretical probability = calculated purely from maths; ex. 100 coins are tossed, probability for heads to appear = ½, probability for tails to appear = ½
+Empirical probability = probability based on real life experiment only; 100 real coins tossed in real life in real environment, head appeared for 57 times, tails appeared for 43 times
+
+As number of trials increases empirical probability approaches theoretical probability
+
+
+— —
+
+Random variable = mathematical representation of outcome of trial; ex. Head = 0, Tails = 1, because PC only understands numbers
+
+
+Types of random variables:
+Discrete random variables: you can list all of them. Finite in number.
+Ex. number of students, no. of books, no. of visible colours to human eye
+Continuous random variables: you cannot list them all. Infinite in number.
+Ex. height, weight, numbers between 1 and 2
+
+— —
+Probability distribution: list of every possible random variable and its probability
+Ex. for dice: For 1: ⅙,  For 2: ⅙, …, For 6: ⅙
+
+
+X
+P(X)
+1
+1/6
+2
+1/6
+3
+1/6
+4
+1/6
+5
+1/6
+6
+1/6
+
+
+— —
+Expected value (Mean): what the one value you get after many trials.
+Ex. for dice what is the one value that is average of all values / all trials
+	Calculation: 1*⅙ + 2*⅙  + 3*⅙ + 4*⅙ + 5*⅙  + 6*⅙ = 3.5
+
+
+This is calculated theoretically that’s why it is called expected value of guaranteed value.
+You get very near to this value in real life after millions of trials.
+
+Mean tell us the center.
+
+— — 
+
+Variance = Breadth / spread of sample space 
+Not the numbers of outcomes in sample space but distance between them.
+Variance : {10, 25, 40} > {20, 25, 30}, both have same mean but 1st has more variance
+
+Formula: 1. Var(X) = E[(X − E[X])² ] 
+	    2. Var(X) = E(X)² − (E[X])² ]
+		Both are same
+
+Steps to calculate:
+Find the mean.
+Compute each value's distance from the mean.
+Square the distances.
+Take the expected value of those squared distances.
+
+
+
+— —
+
+JOINT PROBABILITY: mix probability of two or more variables. (AND not OR)
+
+MARGINAL PROBABILITY: probability of only one variable (OR not AND)
+
+CONDITIONAL PROBABILITY: probability where one or more variables are fixed, and we need probability of other variable(s) at that fixed value of fixed variable(s).
+
+Mutually exclusive events: THe events which cannot co-exist
+
+P(A∣B) is read as “the probability of event A dependent on B
+
+Bay’s theorem: probability inverter;  P(B|A) → P(A|B)
+
+
+
+One Variable → Probability Distribution → Joint Probability → Marginal Probability → Conditional Probability → Independent / Dependent Events → Mutually Exclusive Events → Bayes' Theorem
+
+
